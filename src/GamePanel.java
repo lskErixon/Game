@@ -44,12 +44,13 @@ public class GamePanel extends JPanel {
 
         if(fifteenPuzzle.isSorted(board)){
             g2.drawString("YOU WON!",200,20);
+            System.exit(0);
         }
         else{
             g2.drawString("KEEP PLAYING",200,20);
 
         }
-        g2.setColor(Color.GREEN);
+        g2.setColor(Color.GRAY);
         g2.fillRect(clickPos[0] * TILE_SIZE + ALIGNMENTX,clickPos[1] * TILE_SIZE + ALIGNMENTY,TILE_SIZE,TILE_SIZE);
 
         for(int x = 0; x < board.length; x++){
