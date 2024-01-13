@@ -14,8 +14,8 @@ public class MouseHandler implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
         int[] mousepos = new int[2];
-        mousepos[0] = (e.getX()/(GamePanel.TILE_SIZE)-(GamePanel.ALIGNMENTX/GamePanel.TILE_SIZE));
-        mousepos[1] = (e.getY()/GamePanel.TILE_SIZE -(GamePanel.ALIGNMENTY/GamePanel.TILE_SIZE));
+        mousepos[0] = (e.getX()/(GamePanel.TILE_SIZE) - (GamePanel.ALIGNMENTX / GamePanel.TILE_SIZE));
+        mousepos[1] = (e.getY()/GamePanel.TILE_SIZE - (GamePanel.ALIGNMENTY / GamePanel.TILE_SIZE));
         source.mouseClick(mousepos);
     }
 
